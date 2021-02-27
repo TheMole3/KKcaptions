@@ -6,11 +6,10 @@ const io = require('socket.io')(server);
 const next = require('next');
 const axios = require('axios');
 
-const dev = process.env.NODE_ENV || 'production';
-const nextApp = next({ dev });
+const nextApp = next();
 const nextHandler = nextApp.getRequestHandler();
 
-let port = config.port;
+let port = process.env.port || config.port;
 
 const options = {
     live: false,
@@ -44,10 +43,6 @@ function sendCaption(data) {
         })
         .catch(error => {
           console.error(error)
-        })
-        io.broadcast.emit('info', {
-            zoomSeq: zoomSeq[options.token],
-            ...options
         })
         zoomSeq[options.token]++
     }
