@@ -134,12 +134,12 @@ function TextRow(props) {
       }}>
           <span>{props.text.split("\n").map((i,key) => {
               return <div style={{fontFamily: "Raleway", 
-              "-webkit-touch-callout": "none",
-              "-webkit-user-select": "none",
-              "-khtml-user-select": "none",
-              "-moz-user-select": "none",
-              "-ms-user-select": "none",
-              "user-select": "none"}} key={key}>{i}</div>;
+              "webkitTouchCallout": "none",
+              "webkitUserSelect": "none",
+              "khtmlUserSelect": "none",
+              "mozUserSelect": "none",
+              "msUserSelect": "none",
+              "userSelect": "none"}} key={key}>{i}</div>;
           })}</span>
       </li>
   )
