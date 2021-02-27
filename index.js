@@ -6,7 +6,8 @@ const io = require('socket.io')(server);
 const next = require('next');
 const axios = require('axios');
 
-const nextApp = next();
+const dev = config.production || true;
+const nextApp = next({ dev });
 const nextHandler = nextApp.getRequestHandler();
 
 let port = process.env.port || config.port;
