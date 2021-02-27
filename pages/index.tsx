@@ -23,7 +23,7 @@ function ControllRow(props) {
 
   useEffect(() => {
     socket.on('update', data => {
-      console.log('live ', data.live)
+      
       setState({live: data.live})
     })
   })
@@ -71,7 +71,7 @@ function Footer() {
 
   useEffect(() => {
     socket.on('update', data => {
-      console.log('token ', data.token)
+      
       setState({token: data.token})
     })
   })
@@ -124,7 +124,7 @@ function Footer() {
 }
 
 function TextRow(props) {
-  console.log(props.keys, props.state.text)
+  
   var style = props.keys==props.state.text ? {border: `3px solid rgb(240, 84, 79)`, padding: styles.textRow.padding-3}:{}
   return(
       <li style={{...styles.textRow, ...style}} onClick={() => {
