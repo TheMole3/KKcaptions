@@ -32,6 +32,7 @@ var axiosConfig = {
 
 
 function sendCaption(data) {
+    if(!zoomSeq[options.token]) zoomSeq[options.token] = 0;
     if(options.live) {
         axios
         .post(options.token + "&seq=" + zoomSeq[options.token], 
