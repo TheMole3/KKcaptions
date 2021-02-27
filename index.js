@@ -32,7 +32,7 @@ var axiosConfig = {
 
 
 
-function sendCaption(data) {
+function sendCaption(data, socket) {
     if(options.live) {
         axios
         .post(options.token + "&seq=" + zoomSeq[options.token], 
@@ -80,7 +80,7 @@ io.on('connect', socket => {
 
     socket.on('setText', (data) => {
         options.text = data.text
-        sendCaption(data.text)
+        sendCaption(data.text, socket)
     })
 })
 
