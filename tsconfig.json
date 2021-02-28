@@ -24,6 +24,7 @@
     "**/*.tsx"
 , "public/components/TokenFooter.js", "public/components/SongList.js", "public/components/ReditSong.js", "public/components/colors.js", "public/components/Header.js"  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".next"
   ]
 }
