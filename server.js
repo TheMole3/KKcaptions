@@ -73,7 +73,7 @@ io.on('connection', socket => {
       socket.broadcast.emit('update', options)
       sendCaption(data)
       clearInterval(textInterval)
-      textInterval = setInterval(() => {sendCaption(data)}, 5000)
+      textInterval = setInterval(() => {sendCaption(data)}, 10000)
   })
 })
 
