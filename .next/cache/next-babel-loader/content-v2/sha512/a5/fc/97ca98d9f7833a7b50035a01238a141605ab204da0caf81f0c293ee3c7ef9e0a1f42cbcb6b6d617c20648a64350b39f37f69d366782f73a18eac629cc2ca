@@ -1,1 +1,0 @@
-{"ast":null,"code":"var colors = {\n  richBlackFogra: \"#071013\",\n  lavenderWeb: \"#eeeeff\",\n  sonicSilver: \"#707078\",\n  etonBlue: \"#79c99e\",\n  tartOrange: \"#f0544f\"\n};\nexport default colors;","map":null,"metadata":{},"sourceType":"module"}
