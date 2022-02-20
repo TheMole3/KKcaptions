@@ -10,4 +10,4 @@ yarn start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Or if you don't want to run a server open [https://captions.melo.se](captions.melo.se) 
+Or if you don't want to run a server open [captions.melo.se](https://captions.melo.se) 
